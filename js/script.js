@@ -17,9 +17,8 @@ proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro program
 */
 
 
-for(let i = 1; i <= 100;i++){
-
-    console.log(i);
+for(var i = 1; i <= 100;i++){
+  
 
  if ((i % 3 == 0) && (i % 5 == 0)) {
 
@@ -33,6 +32,8 @@ for(let i = 1; i <= 100;i++){
 
         console.log(i + ' Fizz');
 
+    }  else {
+        console.log(i);
     }
     
 
