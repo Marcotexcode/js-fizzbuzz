@@ -20,7 +20,11 @@ proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro program
 for(var i = 1; i <= 100;i++){
   
 
- if ((i % 3 == 0) && (i % 5 == 0)) {
+ if ((i % 3 == 0) && (i % 5 == 0) && (i % 6 == 0)) {
+
+    console.log(i + ' Fizz Buzz Boolean');
+
+} else if((i % 3 == 0) && (i % 5 == 0)) {
 
         console.log(i + ' Fizz Buzz');
 
@@ -28,13 +32,19 @@ for(var i = 1; i <= 100;i++){
 
         console.log(i + ' Buzz');
 
-    } else if (i % 3 == 0) {
+    } else if ((i % 3 == 0) && (i % 6 == 0)){
 
-        console.log(i + ' Fizz');
+        console.log(i + ' Fizz Boolean');
 
-    }  else {
+    }else if (i % 3 == 0){
+
+        console.log(i + ' fizz');
+
+    } else {
+
         console.log(i);
     }
+    
     
 
 }
