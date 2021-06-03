@@ -14,18 +14,12 @@ Abbiamo visto qualcosa di particolare che possiamo usare?
 Consigli del giorno:
 scriviamo sempre prima dei commenti in italiano per capire cosa vogliamo fare
 proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
-
-
-BONUS
-
-Se il numero è anche divisibile per 6, aggiungiamo "Boolean".
-6 diventerà quindi FizzBoolean,
-30 diventerà FizzBuzzBoolean
-e via dicendo.
-
 */
 
-for(var i = 1; i <= 100;i++){
+
+for(let i = 1; i <= 100;i++){
+
+    console.log(i);
 
  if ((i % 3 == 0) && (i % 5 == 0)) {
 
@@ -35,14 +29,12 @@ for(var i = 1; i <= 100;i++){
 
         console.log(i + ' Buzz');
 
-    } else if ((i % 3 == 0) || (i % 3 == 0)){
+    } else if (i % 3 == 0) {
 
-        console.log(i + ' Fizz Boolean');
+        console.log(i + ' Fizz');
 
-    } 
-  
+    }
     
-    console.log(i);
 
 }
 
